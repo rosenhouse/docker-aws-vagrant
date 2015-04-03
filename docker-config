@@ -1,0 +1,7 @@
+# Docker Upstart and SysVinit configuration file
+
+# Use DOCKER_OPTS to modify the daemon startup options.
+DOCKER_OPTS="-g /mnt/docker"
+
+# This is also a handy place to tweak where Docker's temporary files go.
+export TMPDIR="/mnt/docker-tmp"
