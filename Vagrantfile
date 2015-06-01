@@ -19,7 +19,7 @@ Vagrant.configure(2) do |config|
     aws.tags={ "Name" => "Docker host" }
 
     override.ssh.username = "ubuntu"
-    override.ssh.private_key_path = "~/.ssh/id_rsa"
+    override.ssh.private_key_path = ENV['PRIVATE_KEY_FILE']
 
   end
 
